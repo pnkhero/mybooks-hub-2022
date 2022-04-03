@@ -1,0 +1,501 @@
+.logintitle {
+    position: absolute;
+    width: 906px;
+    height: 211px;
+    left: 182px;
+    top: 40px;
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 151px;
+    text-align: center;
+    color: #FF0000;
+    text-decoration-line: underline;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.emailog {
+    position: absolute;
+    width: 300px;
+    height: 51px;
+    left: 467px;
+    top: 361px;
+}
+
+.passlog {
+    position: absolute;
+    width: 300px;
+    height: 52px;
+    left: 467px;
+    top: 465px;
+}
+
+.connectbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    width: 99px;
+    height: 48px;
+    left: 668px;
+    top: 598px;
+
+    filter: drop-shadow(2px -2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(2px 2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(-2px 2px 4px rgba(35, 167, 250, 0.3)) drop-shadow(-2px -2px 4px rgba(35, 167, 250, 0.3));
+    border-radius: 10px;
+}
+
+.connectgo {
+    position: absolute;
+    width: 98px;
+    height: 45px;
+    left: 400px;
+    top: 598px;
+}
+
+.logsubtit {
+    position: absolute;
+    width: 166px;
+    height: 111px;
+    left: 534px;
+    top: 207px;
+    
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 111px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.titlehome {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 30px;
+    top: -20px;
+
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130%;
+    /* or 62px */
+
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+
+    color: #fb044e;
+}
+
+.wishlistit {
+    position: absolute;
+    width: 206px;
+    height: 49px;
+    left: 200px;
+
+    /* Body text */
+
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.wishlistaut {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    left: 200px;
+
+    font-family: 'Sriracha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.wishlistnbp {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    left: 200px;
+    padding-top: 15px;
+
+    font-family: 'Sriracha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.bookpadding {
+    padding-bottom: 25px;
+}
+
+.searchb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+
+    position: static;
+    width: 110px;
+    height: 55px;
+    left: 1078px;
+    top: 6px;
+
+    /* Black */
+
+    background: #000000;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.searchc {
+    position: static;
+    width: 560px;
+    height: 26px;
+    left: 478px;
+    top: 30px;
+    
+    /* Regular text */
+    
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 10px; 
+}
+
+.wishbtnhome {
+    position: fixed;
+    /* width: 180px; */
+    height: 0px;
+    left: 600px;
+    top: 40px;
+    padding: 10px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000; 
+}
+
+.endbtnhome {
+    position: fixed;
+    /* width: 180px; */
+    height: 0px;
+    left: 850px;
+    top: 40px;
+    padding: 10px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000; 
+}
+
+.searchbtnhome {
+    position: fixed;
+    /* width: 220px; */
+    height: 0px;
+    left: 1100px;
+    top: 40px;
+    padding: 10px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000; 
+}
+
+.logoutbtn {
+    position: fixed;
+    /* width: 220px; */
+    height: 0px;
+    left: 0px;
+    top: 920px;
+    padding: 10px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.renderbtn {
+    position: fixed;
+    /* width: 180px; */
+    height: 0px;
+    left: 350px;
+    top: 40px;
+    padding: 10px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.renderbooks {
+    position: fixed;
+    width: 180px;
+    height: 0px;
+    left: 350px;
+    top: 250px;
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.upnbchamp {
+    position: relative;
+    width: 300px;
+    height: 26px;
+    left: 120px;
+    top: -180px;
+    
+    /* Regular text */
+    
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 10px; 
+}
+
+.upsubmit {
+    position: relative;
+    width: 300px;
+    height: 26px;
+    left: 120px;
+    top: -130px;
+    
+    /* Regular text */
+    
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 10px; 
+}
+
+.upfinish {
+    position: relative;
+    width: 300px;
+    height: 26px;
+    left: 220px;
+    top: -156px;
+    
+    /* Regular text */
+    
+    font-family: 'Apercu Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 10px; 
+}
+
+.searchview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.foundbookview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    left: 0px;
+    top: 150px;
+
+    background: #f5f391;
+}
+
+.titlefoundbook {
+
+    position: absolute;
+    width: 500px;
+    height: 49px;
+    left: 720px;
+
+    /* Body text */
+    /* or 28px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.descfoundbook {
+
+    position: absolute;
+    width: 900px;
+    height: 49px;
+    left: 520px;
+    top: 150px;
+
+    /* Body text */
+    /* or 28px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.addfoundbook {
+
+    position: relative;
+    width: 500px;
+    height: 49px;
+    left: 1020px;
+    top: 120px;
+}
+
+.backfoundbook {
+
+    position: relative;
+    width: 500px;
+    height: 49px;
+    top: 30px;
+    left: 0px;
+}
+
+.wishfoundbook {
+
+    position: relative;
+    width: 500px;
+    height: 49px;
+    top: 72px;
+    left: 650px;
+}
+
+.user_id {
+    position: relative;
+    top: 60px;
+    left: 1500px;
+}
+
+.homeupbtn {
+    position: relative;
+    top: -80px;
+    left: 200px;
+}
+
+.datenow {
+    position: relative;
+    top: 100px;
+    left: 700px;
+}
