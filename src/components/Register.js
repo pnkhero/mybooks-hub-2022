@@ -32,6 +32,10 @@ class RegisterP extends React.Component {
         userTools.addUserDatabase(this.state.email, this.state.password)
     }
 
+    backlogin() {
+        window.location.replace('/login')
+    }
+
     render(){
       return (
         <div>
@@ -62,7 +66,7 @@ class RegisterP extends React.Component {
                                           value={this.state.password}
                                       />
                                   </div>
-                                  <div className={styles.connectbtn}>
+                                  <div className={styles.rego}>
                                       <Button
                                       onClick={() => this.register()}
                                       fullWidth
@@ -72,6 +76,18 @@ class RegisterP extends React.Component {
                                       value="Submit"
                                       >
                                           Register
+                                      </Button>
+                                  </div>
+                                  <div className={styles.backlog}>
+                                      <Button
+                                      onClick={() => this.backlogin()}
+                                      fullWidth
+                                      variant="contained"
+                                      color="primary"
+                                      className="button-submit"
+                                      value="Submit"
+                                      >
+                                          login
                                       </Button>
                                   </div>
                               </form>

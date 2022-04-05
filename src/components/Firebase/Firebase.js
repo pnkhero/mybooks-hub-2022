@@ -141,6 +141,16 @@ async function logout() {
   });
 }
 
+async function getemail() {
+  const user = auth.currentUser;
+  if (user) {
+    const email = user.email;
+    return email;
+  }
+}
+
+
+
 async function checkUserDatabase(email, password) {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -166,6 +176,7 @@ const userTools = {
     signgoogle,
     remove_bok_wish,
     remove_bok_now,
+    getemail,
     //githubauth,
     //facebookauth,
 };

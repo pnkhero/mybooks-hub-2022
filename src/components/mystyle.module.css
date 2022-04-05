@@ -2,7 +2,7 @@
     position: absolute;
     width: 906px;
     height: 211px;
-    left: 182px;
+    left: 450px;
     top: 40px;
     font-family: 'Italiana';
     font-style: normal;
@@ -19,7 +19,7 @@
     position: absolute;
     width: 300px;
     height: 51px;
-    left: 467px;
+    left: 740px;
     top: 361px;
 }
 
@@ -27,7 +27,7 @@
     position: absolute;
     width: 300px;
     height: 52px;
-    left: 467px;
+    left: 740px;
     top: 465px;
 }
 
@@ -41,7 +41,24 @@
     position: absolute;
     width: 99px;
     height: 48px;
-    left: 668px;
+    left: 800px;
+    top: 598px;
+
+    filter: drop-shadow(2px -2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(2px 2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(-2px 2px 4px rgba(35, 167, 250, 0.3)) drop-shadow(-2px -2px 4px rgba(35, 167, 250, 0.3));
+    border-radius: 10px;
+}
+
+.registerbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    width: 99px;
+    height: 48px;
+    left: 968px;
     top: 598px;
 
     filter: drop-shadow(2px -2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(2px 2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(-2px 2px 4px rgba(35, 167, 250, 0.3)) drop-shadow(-2px -2px 4px rgba(35, 167, 250, 0.3));
@@ -52,15 +69,49 @@
     position: absolute;
     width: 98px;
     height: 45px;
-    left: 400px;
+    left: 500px;
     top: 598px;
+}
+
+.backlog {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    width: 99px;
+    height: 48px;
+    left: 950px;
+    top: 598px;
+
+    filter: drop-shadow(2px -2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(2px 2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(-2px 2px 4px rgba(35, 167, 250, 0.3)) drop-shadow(-2px -2px 4px rgba(35, 167, 250, 0.3));
+    border-radius: 10px;
+}
+
+.rego{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    width: 99px;
+    height: 48px;
+    left: 700px;
+    top: 598px;
+
+    filter: drop-shadow(2px -2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(2px 2px 4px rgba(140, 10, 204, 0.3)) drop-shadow(-2px 2px 4px rgba(35, 167, 250, 0.3)) drop-shadow(-2px -2px 4px rgba(35, 167, 250, 0.3));
+    border-radius: 10px;
 }
 
 .logsubtit {
     position: absolute;
     width: 166px;
     height: 111px;
-    left: 534px;
+    left: 800px;
     top: 207px;
     
     font-family: 'Sacramento';

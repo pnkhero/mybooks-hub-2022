@@ -34,10 +34,17 @@ class LoginP extends React.Component {
       window.location.replace('/home?id-user=' + this.state.email)
     }
 
-    logingoogle() {
-        if (userTools.signgoogle() == true) {
-            window.location.replace('/home?id-user=' + this.state.email)
-        }
+    goregister() {
+        window.location.replace('/register')
+    }
+
+    logingoogle = async () => {
+            await userTools.signgoogle()
+            var emailg = await userTools.getemail()
+            console.log(emailg)
+            if (emailg) {
+                window.location.replace('/home?id-user=' + emailg)
+            }
     }
     
     render(){
@@ -80,6 +87,18 @@ class LoginP extends React.Component {
                           value="Submit"
                         >
                           Connect
+                      </Button>
+                  </div>
+                  <div className={styles.registerbtn} >
+                      <Button
+                          onClick={() => this.goregister()}
+                          fullWidth
+                          variant="contained"
+                          color="primary"
+                          className="button-submit"
+                          value="Submit"
+                        >
+                          Register
                       </Button>
                   </div>
                   <div className={styles.connectgo} >
