@@ -124,7 +124,7 @@
 }
 
 .titlehome {
-    position: absolute;
+    position: fixed;
     width: 0px;
     height: 0px;
     left: 30px;
@@ -537,7 +537,7 @@
 }
 
 .user_id {
-    position: relative;
+    position: fixed;
     top: 60px;
     left: 1500px;
 }
@@ -549,7 +549,7 @@
 }
 
 .datenow {
-    position: relative;
+    position: fixed;
     top: 100px;
     left: 700px;
 }
