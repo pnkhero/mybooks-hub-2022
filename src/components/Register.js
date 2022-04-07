@@ -1,5 +1,5 @@
 import Container from '@material-ui/core/Container';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import PersonIcon from '@material-ui/icons/Person';
@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import userTools from './Firebase/Firebase'
 import styles from './mystyle.module.css';
+import Alert from "./Alert";
 
 class RegisterP extends React.Component {
     constructor(props) {
@@ -18,8 +19,9 @@ class RegisterP extends React.Component {
         };
         this.password = this.password.bind(this);
         this.email = this.email.bind(this);
+        this.alertp = false
     };
-
+    
     email(event) {
         this.setState({email: event.target.value})
     }
@@ -30,6 +32,8 @@ class RegisterP extends React.Component {
 
     register() {
         userTools.addUserDatabase(this.state.email, this.state.password)
+        this.alertp = true
+        console.log(this.alertp)
     }
 
     backlogin() {

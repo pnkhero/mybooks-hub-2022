@@ -11,6 +11,13 @@ const githubProvider = new GithubAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 const googleProvider = new GoogleAuthProvider();
 
+async function getemail() {
+  const user = auth.currentUser;
+  if (user) {
+    const email = user.email;
+    return email;
+  }
+}
 
 async function signgoogle() {
   signInWithPopup(auth, googleProvider)
@@ -20,7 +27,8 @@ async function signgoogle() {
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
-    console.log(user)
+    console.log()
+    window.location.replace('/home?id-user=' + user.email)
     // ...
     return true
   }).catch((error) => {
@@ -125,7 +133,7 @@ async function addUserDatabase(email, password) {
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
     createdocument(email)
-    window.location.replace('/home?id-user=' + this.state.email)
+    window.location.replace('/home?id-user=' + email)
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -139,14 +147,6 @@ async function logout() {
   }).catch((error) => {
     console.log(error)
   });
-}
-
-async function getemail() {
-  const user = auth.currentUser;
-  if (user) {
-    const email = user.email;
-    return email;
-  }
 }
 
 

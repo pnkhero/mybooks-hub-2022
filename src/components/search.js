@@ -106,17 +106,7 @@ export function SearchP() { {
                                     <h1 className={styles.descfoundbook}>
                                         {data.items[0]["volumeInfo"]["description"]}
                                     </h1>
-                                    <div className={styles.addfoundbook}>
-                                    <Button
-                                        onClick={() => StartBook()}
-                                        variant="contained"
-                                        color="primary"
-                                        className="button-submit"
-                                        value="Submit"
-                                        >
-                                        start it
-                                    </Button>
-                                    </div>
+        
                                     <div className={styles.wishfoundbook}>
                                     <Button
                                         onClick={() => Addlistw()}
@@ -126,6 +116,17 @@ export function SearchP() { {
                                         value="Submit"
                                         >
                                         Add to wish list
+                                    </Button>
+                                    </div>
+                                    <div className={styles.addfoundbook}>
+                                    <Button
+                                        onClick={() => StartBook()}
+                                        variant="contained"
+                                        color="primary"
+                                        className="button-submit"
+                                        value="Submit"
+                                        >
+                                        start it
                                     </Button>
                                     </div>
                                     <div className={styles.backfoundbook}>

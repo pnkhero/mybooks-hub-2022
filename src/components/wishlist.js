@@ -21,7 +21,7 @@ export default function WishP(props) {
     }
     
     return (
-        <Dialog open={openPopup} onClose={handleClose}>
+        <Dialog open={openPopup} onClose={handleClose} maxWidth="sm">
             <DialogTitle>
                 <div>
                     {<h1>My wish list</h1>}

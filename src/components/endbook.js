@@ -20,7 +20,7 @@ export default function EndbookP(props) {
         <Dialog open={selectWP} onClose={handleClose}>
             <DialogTitle>
                 <div>
-                    {<h1>My ended book list</h1>}
+                    {<h1>My finished book list</h1>}
                 </div>
             </DialogTitle>
             <DialogContent>

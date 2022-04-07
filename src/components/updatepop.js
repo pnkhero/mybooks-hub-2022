@@ -45,7 +45,7 @@ export default function UpdateP(props) {
         <Dialog open={openup} onClose={handleClose}>
         <DialogTitle>
             <div>
-                {<h1>update</h1>}
+                {<h1>Update</h1>}
             </div>
         </DialogTitle>
         <DialogContent>

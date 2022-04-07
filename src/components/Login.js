@@ -31,7 +31,6 @@ class LoginP extends React.Component {
 
     login() {
       userTools.checkUserDatabase(this.state.email, this.state.password);
-      window.location.replace('/home?id-user=' + this.state.email)
     }
 
     goregister() {
@@ -40,11 +39,6 @@ class LoginP extends React.Component {
 
     logingoogle = async () => {
             await userTools.signgoogle()
-            var emailg = await userTools.getemail()
-            console.log(emailg)
-            if (emailg) {
-                window.location.replace('/home?id-user=' + emailg)
-            }
     }
     
     render(){
