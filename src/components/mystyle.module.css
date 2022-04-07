@@ -343,7 +343,7 @@
 }
 
 .renderbooks {
-    position: fixed;
+    position: absolute;
     width: 180px;
     height: 0px;
     left: 350px;
